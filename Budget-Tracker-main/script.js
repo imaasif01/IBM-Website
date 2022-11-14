@@ -8,6 +8,12 @@ const moneyMinus = document.getElementById("money-minus");
 const inputerrName = document.getElementById("inputerrName");
 const inputerrAmount = document.getElementById("inputerrAmount");
 
+let navbar = document.querySelector(".dd_main");
+
+navbar.addEventListener("click", function () {
+  this.classList.toggle("active");
+});
+
 window.onload = () => {
   Name.value = "";
   Amount.value = "";
